@@ -1,6 +1,14 @@
 .header-section{
-  display:block;
+  display:flex;
+  flex-direction: row;
   background-color: grey;
   height: 20vh;
   min-width: 100vw;
+}
+
+.app-root{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
