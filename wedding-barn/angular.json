@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wedding-barn"
+    }
+  },
+  "defaultProject": "wedding-barn",
+  "cli": {
+    "analytics": "569f9d37-3a8f-4e98-a34f-040e90478520"
+  }
 }
