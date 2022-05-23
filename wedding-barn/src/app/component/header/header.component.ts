@@ -18,4 +18,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  displayRooster(index) {
+    const element = <HTMLElement> document.getElementsByClassName('hover-rooster')[index];
+    element.style.display = 'block';
+  }
+  hideRooster(index){
+    const element = <HTMLElement> document.getElementsByClassName('hover-rooster')[index];
+    if (element.classList.contains('selected')) return
+    element.style.display = 'none';
+  }
 }

@@ -1,40 +1,40 @@
-<div class="nav-container">
-  <div>
+<div class="header-container">
+  <div class="header-col">
     <div class="nav-list left-list">
-      <div class="nav left-nav" *ngFor="let nav of left_navs">
-        <h3>
-          <a [title]="nav.text" [routerLink]="['/', nav.link]">
-            {{ nav.text | uppercase}}
-          </a>
-        </h3>
+      <div class="nav left-nav" *ngFor="let nav of left_navs; let i = index">
+        <div class="nav-item">
+          <img class="hover-rooster" alt="rooster icon for nav" src="../../../assets/images/nav-rooster.png">
+          <h3>
+            <a (mouseover)="displayRooster(i)" (mouseout)="hideRooster(i)" [title]="nav.text" [routerLink]="['/', nav.link]">
+              {{ nav.text | uppercase}}
+            </a>
+          </h3>
+        </div>
       </div>
     </div>
     <div>
-      <!-- <hr class="arrow" /> -->
       <img class="arrow" alt="left-arrow" src="../../../assets/images/header_arrow.png">
     </div>
   </div>
 
-  <div class="center">
-    <img
-      class="logo-img"
-      alt="center logo"
-      src="../../../assets/images/WB4.png"
-    />
+  <div class="header-col logo-container">
+    <img class="logo-img" alt="center logo" src="../../../assets/images/WB4.png" />
   </div>
 
-  <div>
-    <div class="nav-list">
-      <div class="nav right-nav" *ngFor="let nav of right_navs">
-        <h3>
-          <a [title]="nav.text" [routerLink]="['/', nav.link]">
-            {{ nav.text | uppercase}}
-          </a>
-        </h3>
+  <div class="header-col">
+    <div class="nav-list right-list">
+      <div class="nav right-nav" *ngFor="let nav of right_navs; let i = index">
+        <div class="nav-item">
+          <img class="hover-rooster" alt="rooster icon for nav" src="../../../assets/images/nav-rooster.png">
+          <h3>
+            <a (mouseover)="displayRooster(i+3)" (mouseout)="hideRooster(i+3)" [title]="nav.text" [routerLink]="['/', nav.link]">
+              {{ nav.text | uppercase}}
+            </a>
+          </h3>
+        </div>
       </div>
     </div>
     <div>
-      <!-- <hr class="arrow" /> -->
       <img class="arrow flip-img" alt="right-arrow" src="../../../assets/images/header_arrow.png">
     </div>
   </div>
