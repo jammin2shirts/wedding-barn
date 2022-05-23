@@ -2,3 +2,14 @@
 html,body{
   margin: 0px;
 }
+
+
+@font-face {
+  font-family: ambrose-regular;
+  src: url(/assets/fonts/Ambrose_Std_Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: ambrose-regular-light;
+  src: url(/assets/fonts/Ambroise_Light_Regular.otf) format("opentype");
+}
