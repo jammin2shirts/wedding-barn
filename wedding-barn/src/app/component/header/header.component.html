@@ -1,41 +1,76 @@
-<div class="header-container">
-  <div class="header-col">
-    <div class="nav-list left-list">
-      <div class="nav left-nav" *ngFor="let nav of left_navs; let i = index">
-        <div class="nav-item">
-          <img class="hover-rooster" alt="rooster icon for nav" src="../../../assets/images/nav-rooster.png">
-          <h3>
-            <a (mouseover)="displayRooster(i)" (mouseout)="hideRooster(i)" [title]="nav.text" [routerLink]="['/', nav.link]">
-              {{ nav.text | uppercase}}
-            </a>
-          </h3>
+<div>
+  <div class="header-container">
+    <div class="header-col">
+      <div class="nav-list left-list">
+        <div class="nav left-nav" *ngFor="let nav of left_navs; let i = index">
+          <div class="nav-item">
+            <img
+              class="hover-rooster"
+              alt="rooster icon for nav"
+              src="../../../assets/images/nav-rooster.png"
+            />
+            <h3>
+              <a
+                (mouseover)="displayRooster(i)"
+                (mouseout)="hideRooster(i)"
+                [title]="nav.text"
+                [routerLink]="['/', nav.link]"
+              >
+                {{ nav.text | uppercase }}
+              </a>
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <img class="arrow" alt="left-arrow" src="../../../assets/images/header_arrow.png">
-    </div>
-  </div>
-
-  <div class="header-col logo-container">
-    <img class="logo-img" alt="center logo" src="../../../assets/images/WB4.png" />
-  </div>
-
-  <div class="header-col">
-    <div class="nav-list right-list">
-      <div class="nav right-nav" *ngFor="let nav of right_navs; let i = index">
-        <div class="nav-item">
-          <img class="hover-rooster" alt="rooster icon for nav" src="../../../assets/images/nav-rooster.png">
-          <h3>
-            <a (mouseover)="displayRooster(i+3)" (mouseout)="hideRooster(i+3)" [title]="nav.text" [routerLink]="['/', nav.link]">
-              {{ nav.text | uppercase}}
-            </a>
-          </h3>
-        </div>
+      <div class="arrow-div">
+        <img
+          class="arrow"
+          alt="left-arrow"
+          src="../../../assets/images/header_arrow.png"
+        />
       </div>
     </div>
-    <div>
-      <img class="arrow flip-img" alt="right-arrow" src="../../../assets/images/header_arrow.png">
+
+    <div class="header-col logo-container">
+      <img
+        class="logo-img"
+        alt="center logo"
+        src="../../../assets/images/WB4.png"
+      />
+    </div>
+
+    <div class="header-col">
+      <div class="nav-list right-list">
+        <div
+          class="nav right-nav"
+          *ngFor="let nav of right_navs; let i = index"
+        >
+          <div class="nav-item">
+            <img
+              class="hover-rooster"
+              alt="rooster icon for nav"
+              src="../../../assets/images/nav-rooster.png"
+            />
+            <h3>
+              <a
+                (mouseover)="displayRooster(i + 3)"
+                (mouseout)="hideRooster(i + 3)"
+                [title]="nav.text"
+                [routerLink]="['/', nav.link]"
+              >
+                {{ nav.text | uppercase }}
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-div">
+        <img
+          class="arrow flip-img"
+          alt="right-arrow"
+          src="../../../assets/images/header_arrow.png"
+        />
+      </div>
     </div>
   </div>
 </div>

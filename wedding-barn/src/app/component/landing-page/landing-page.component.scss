@@ -1,0 +1,33 @@
+h2 {
+  font-family: ambrose-regular-light;
+  text-align: center;
+  font-size: minmax(8px, 8vw);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing-container {
+  display: flex;
+  margin: max(10px, 20px) max(20px, 10%);
+  flex-direction: column;
+}
+
+.wedding-banner {
+  // width: 100vw;
+  height: 200px;
+  object-fit: cover;
+  // margin: 0px max(30px, 10px);
+}
+
+.tree-photo {
+  height: 300px;
+  // width: inherit;
+  object-fit: cover;
+}
+
+.split-view {
+  display: flex;
+  flex-direction: column;
+}
