@@ -4,13 +4,9 @@ h2 {
   font-size: minmax(8px, 8vw);
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
 .landing-container {
   display: flex;
-  margin: max(10px, 20px) max(20px, 10%);
+  margin: max(20px, 40px) max(20px, 10%);
   flex-direction: column;
 }
 
@@ -30,6 +26,9 @@ p {
   flex-direction: column;
 }
 
+.ceremony-desc > span {
+  font-size: x-large;
+}
 
 @media (min-width: 800px) {
   .split-view {
@@ -38,5 +37,8 @@ p {
   }
   .landing-container > div {
     margin-top: 80px;
+  }
+  .ceremony-desc {
+    padding-right: 20px;
   }
 }

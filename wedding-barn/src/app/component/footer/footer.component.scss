@@ -1,0 +1,59 @@
+.footer-rooster {
+  width: 100px;
+  object-fit: scale-down;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  // height: ;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+}
+
+.top-text {
+  font-size: small;
+  text-align: center;
+}
+.bot-text {
+  font-size: medium;
+}
+
+.divider {
+  display: none;
+}
+
+.facebook {
+  width: 40px;
+}
+.bot-icons {
+  text-align: center;
+}
+a {
+  margin: 5px;
+}
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+  .divider {
+    display: block;
+    height: 40%;
+    margin: 0px 10px;
+  }
+  .top-text {
+    font-size: large;
+    text-align: start;
+  }
+  .bot-text {
+    font-size: x-large;
+  }
+}

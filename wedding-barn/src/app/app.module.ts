@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { LandingPageComponent } from './component/landing-page/landing-page.component';
+import { MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LandingPageComponent } from './component/landing-page/landing-page.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
