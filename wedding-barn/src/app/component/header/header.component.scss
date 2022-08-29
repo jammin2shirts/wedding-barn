@@ -65,17 +65,24 @@ h3 {
   display: none;
 }
 
+.mobile-menu {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 5px;
+}
+
 @media (min-width: 400px) {
   .logo-img {
     width: 200px;
   }
 }
 @media (min-width: 600px) {
+}
+
+@media (min-width: 900px) {
   .arrow {
     width: clamp(33vw, 100%, 100%);
-  }
-  .arrow-div {
-    display: block;
   }
   .flip-img {
     transform: scaleX(-1);
@@ -85,10 +92,13 @@ h3 {
     flex-direction: column;
     align-self: center;
   }
-}
-
-@media (min-width: 860px) {
+  .arrow-div {
+    display: block;
+  }
   .nav-list {
     display: flex;
+  }
+  .mobile-menu {
+    display: none;
   }
 }
