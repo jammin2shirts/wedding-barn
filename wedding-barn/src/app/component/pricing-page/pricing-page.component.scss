@@ -1,7 +1,6 @@
 .pricing-container {
   display: flex;
   flex-direction: column;
-  // width: 60vw;
   margin: max(20px, 40px) max(20px, 10%);
 }
 
@@ -83,7 +82,6 @@ ul {
 .arrow-header {
   font-size: large;
   line-height: 1.5em;
-  // text-align: center;
 }
 
 @media (min-width: 400px) {
