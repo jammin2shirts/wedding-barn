@@ -42,7 +42,7 @@ ul {
   margin: 0px 0px 20px 0px !important;
 }
 
-.pricing-info{
+.pricing-info {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -57,29 +57,29 @@ ul {
   }
 }
 
-.pricing-print{
+.pricing-print {
   display: flex;
   width: 80%;
   align-self: end;
 
-  > ul > li{
+  > ul > li {
     font-size: x-small;
   }
 }
 
-.downpayment{
+.downpayment {
   ul {
     // padding: 10px !important;
   }
 }
 
-.additional{
+.additional {
   // display: flex;
   // flex-direction: column;
   // align-items: center;
 }
 
-.arrow-header{
+.arrow-header {
   font-size: large;
   line-height: 1.5em;
   // text-align: center;
@@ -87,10 +87,10 @@ ul {
 
 @media (min-width: 400px) {
   .suite-container {
-    display:grid;
+    display: grid;
     grid-template-areas:
-    "a a"
-    "b c";
+      "a a"
+      "b c";
     > div {
       grid-area: a;
     }
@@ -119,13 +119,14 @@ ul {
   .amenities-container {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 500px;
+    width: 100%;
     flex-wrap: wrap;
-    // gap: 20px;
-    align-content: space-around;
-    > ul {
-      // width:max-content;
-      display: block;
-    }
+    align-content: center;
+    gap: 20px;
+  }
+  .amenities-section{
+    display: flex;
+    flex-direction: column;
   }
 }
