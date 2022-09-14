@@ -12,6 +12,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule} from '@angular/material/button';
 import { PricingPageComponent } from './component/pricing-page/pricing-page.component';
+import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PricingPageComponent } from './component/pricing-page/pricing-page.comp
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    PricingPageComponent
+    PricingPageComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,

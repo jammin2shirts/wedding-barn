@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
 
   displayRooster(index) {
     const element = <HTMLElement> document.getElementsByClassName('hover-rooster')[index];
-    element.style.display = 'block';
+    element.style.opacity = '100';
   }
   hideRooster(index){
     const element = <HTMLElement> document.getElementsByClassName('hover-rooster')[index];
     if (element.classList.contains('selected')) return
-    element.style.display = 'none';
+    element.style.opacity = '0';
   }
 }

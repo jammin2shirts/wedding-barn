@@ -14,11 +14,13 @@ a:hover {
 }
 
 .hover-rooster {
-  display: none;
-  position: absolute;
+  display: block;
+  position: relative;
   align-self: center;
-  top: 35px;
+  // top: 20px;
+  margin:auto;
   width: min(30px, 60px);
+  opacity: 0;
 }
 
 .nav {
