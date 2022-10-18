@@ -84,7 +84,7 @@ h3 {
 
 @media (min-width: 900px) {
   .arrow {
-    width: clamp(33vw, 100%, 100%);
+    width: 100%;
   }
   .flip-img {
     transform: scaleX(-1);
@@ -102,5 +102,8 @@ h3 {
   }
   .mobile-menu {
     display: none;
+  }
+  .nav-col{
+    flex:1
   }
 }

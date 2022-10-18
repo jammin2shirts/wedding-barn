@@ -1,5 +1,5 @@
 .footer-rooster {
-  width: 100px;
+  width: 75px;
   object-fit: scale-down;
 }
 
@@ -11,16 +11,30 @@
   align-items: center;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.media {
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  text-align: left;
+  align-self: center;
+  font-size: 1em;
+}
 .footer-text {
   display: flex;
   flex-direction: column;
   height: 100px;
   justify-content: center;
 }
-
 .top-text {
   font-size: small;
   text-align: center;
+  margin: 5px;
 }
 .bot-text {
   font-size: medium;
@@ -28,6 +42,7 @@
 
 .divider {
   display: none;
+  border-left: 1px solid black;
 }
 
 .facebook {
@@ -35,9 +50,6 @@
 }
 .bot-icons {
   text-align: center;
-}
-a {
-  margin: 5px;
 }
 @media (min-width: 500px) {
   .container {

@@ -1,42 +1,33 @@
 <div class="landing-container">
-  <img
-    src="../../../assets/images/wedding-photo.jpg"
-    alt="wedding banner photo"
-    class="wedding-banner"
-  />
-  <div class="desc">
-  <h2>COMING SOON!</h2>
-  <p>
-    The Wedding Barn operates a beatiful event space right in the heart of
-    Central Florida. Located just min 20 north of Orlando, our idyllic setting
-    is a family owned and operated venue that prides itself on creating the
-    perfect event for you. The offer of a rustic setting, stellar customer
-    service, and an inclusive setting are our promise to you. Originally built
-    in 2022, the Wedding Barn features a fully air conditioned barn, cocktail
-    patio, bar area, and a catering prep kitchen. You and your guests will enjoy
-    mingling, and wandering the memorable grounds. As a premier reception venue,
-    The Wedding Barn offers memories to last a life time.
-  </p>
-  </div>
-  <div class="split-view">
-    <div class="split-child ceremony-desc">
-      <span>The Ceremony</span>
-      <p>
-        The Wedding Barn offers a romantic setting for all couples' special
-        occasions. The charming barn can host up to 200 guests under glistening
-        lights and elegant chandeliers. Ceremonies can be held outdoors under
-        the shade of a historic oak tree as you walk down the aisle amoung your
-        closest friends and family. Two pituresque dressing rooms offer comfort
-        and privacy for the whole wedding party as you prepare for your magical
-        day.
-      </p>
-    </div>
-    <div class="split-child">
-      <img
-        src="../../../assets/images/wedding-photo.jpg"
-        alt="wedding banner photo"
-        class="tree-photo"
-      />
+  <div class="banner-container">
+
+    <img src="assets/images/bannermain.png" alt="wedding banner photo" class="wedding-banner" />
+    <div class="trans-banner">
+      <div class="trans-background">
+        <span class="banner-text">WELCOME TO THE WEDDING BARN</span>
+      </div>
     </div>
   </div>
+  <div class="arrow-message">
+    <img src="assets/images/arrowtagline.svg" alt="banner barn outline photo" class="arrow-message-image" />
+  </div>
+  <div class="outline-container">
+    <img src="assets/images/barnnooutline.png" alt="banner barn outline photo" class="collage" />
+
+    <div class="barn-silhouette-container">
+      <img src="assets/images/barn.svg" alt="banner barn outline photo" />
+      <button mat-raised-button color="wedding" (click)="navTo('contact')">
+        <div class="book-btn-container">
+          <img src="assets/images/nav-rooster.png" alt="footer rooster" class="footer-rooster" />
+          <div class="footer-text">
+            <span class="top-text">SAVE THE DATE.</span>
+            <!-- <span class="bot-text">BOOK A TOUR TODAY.</span> -->
+            <span class="bot-text">CONTACT US TODAY.</span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+
 </div>
+
