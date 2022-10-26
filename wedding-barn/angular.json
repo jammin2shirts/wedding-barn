@@ -32,7 +32,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/js/honeybook-form.js"
+              // "src/assets/js/honeybook-form.js"
             ]
           },
           "configurations": {

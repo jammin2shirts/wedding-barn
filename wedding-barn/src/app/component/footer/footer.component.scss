@@ -1,6 +1,5 @@
 .footer-rooster {
-  width: 75px;
-  object-fit: scale-down;
+  display: none;
 }
 
 .container {
@@ -26,10 +25,7 @@
   font-size: 1em;
 }
 .footer-text {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  justify-content: center;
+  display: none;
 }
 .top-text {
   font-size: small;
@@ -42,7 +38,6 @@
 
 .divider {
   display: none;
-  border-left: 1px solid black;
 }
 
 .facebook {
@@ -55,11 +50,6 @@
   .container {
     flex-direction: row;
   }
-  .divider {
-    display: block;
-    height: 40%;
-    margin: 0px 10px;
-  }
   .top-text {
     font-size: large;
     text-align: start;
@@ -67,4 +57,24 @@
   .bot-text {
     font-size: x-large;
   }
+}
+@media (min-width: 650px) {
+  .divider {
+    display: block;
+    border-left: 1px solid black;
+    height: 40%;
+    margin: 0px 10px;
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+  }
+  .footer-rooster {
+    display: block;
+    width: 75px;
+    object-fit: scale-down;
+  }
+
 }
