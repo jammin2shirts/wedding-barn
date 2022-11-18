@@ -10,11 +10,11 @@ const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
   { path: 'contact', component: ContactPageComponent },
   // { path: 'pricing', component: PricingPageComponent },
-  { path: '**', component: LandingPageComponent },
+  { path: '**', redirectTo: '/home', pathMatch:'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{useHash:true,onSameUrlNavigation: 'reload'})],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload', initialNavigation: 'enabled' })],
   exports: [RouterModule],
   providers: [],
 })

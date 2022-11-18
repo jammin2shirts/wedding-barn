@@ -29,7 +29,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     ContactPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     MatDividerModule,
@@ -37,7 +37,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     MatMenuModule,
     MatButtonModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
