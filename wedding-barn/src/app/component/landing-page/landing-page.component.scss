@@ -76,12 +76,15 @@
 
 .book-btn-container {
   display: flex;
+  width: max-content;
   justify-content: center;
   text-align: left;
 }
 
 .mat-wedding {
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218) !important;
+  height: fit-content;
+  padding: 5px;
   border-radius: 30px;
   color: black;
   font-weight: normal;
