@@ -32,7 +32,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/js/honeybook-form.js"
             ],
             "vendorChunk": true,
             "extractLicenses": false,

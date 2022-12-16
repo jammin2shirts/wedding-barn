@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  url ="https://www.honeybook.com/widget/the_wedding_barn_234791/cf_id/633da925dd2a5a0026b82a25"
 
   left_navs = [
     { text: "About", link: "home" },
@@ -34,11 +35,10 @@ export class HeaderComponent implements OnInit {
     element.style.opacity = '0';
   }
   navTo(link: string) {
-    this.router.navigate(['/',link])
-      .then(() => {
-        if (link == 'contact') {
-          window.location.reload();
-        }
-      });
+    if (link == 'contact') {
+      window.open(this.url, "_blank");
+    } else {
+      this.router.navigate(['/', link])
+    }
   }
 }

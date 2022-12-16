@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-html,body{
+html,
+body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
@@ -15,18 +16,23 @@ html,body{
   src: url(/assets/fonts/Ambroise_Light_Regular.otf) format("opentype");
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.mat-fab{
-  background-color: #9A2A2A;
-  // height: 40px !important;
-  // width: 40px !important;
-  // .mat-button-wrapper{
-  //   height: 40px !important;
-  // }
+html,
+body {
+  height: 100%;
 }
-.mat-menu-content{
-  // background-color: rgb(238, 84, 84);
+
+body {
+  margin: 0;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
+}
+
+.mat-fab {
+  background-color: #9A2A2A;
+}
+
+.mat-menu-content {
   background-color: #9A2A2A;
 }

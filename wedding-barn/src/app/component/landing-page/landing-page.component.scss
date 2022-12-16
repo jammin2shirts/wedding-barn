@@ -1,7 +1,55 @@
 .landing-container {
   display: flex;
-  margin: 0px max(20px, 10%) 50%;
   flex-direction: column;
+}
+
+.opening-desc-container {
+  margin: 10px 50px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    max-width: 1200px;
+    line-height: 200%;
+  }
+}
+
+.landing-barn-img {
+  // margin-top: -10%;
+  width: 100%;
+}
+
+.collage {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  text-align: center;
+  font-size: large;
+}
+
+.c-text {
+  margin-bottom: 20px;
+}
+
+.c-img {
+  width: 100%;
+}
+
+.tagline {
+  font-family: eds-market-main-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #782f40;
+  font-size: xx-large;
+  text-align: center;
+  width: 100vw;
+  line-height: 150%;
+  margin: 0px 10%;
+}
+
+.arrow {
+  transform: scaleX(-1);
+  margin: 20px 30px;
 }
 
 .banner-container {
@@ -19,13 +67,13 @@
 }
 
 .trans-background {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
   border-radius: 30px;
 
-  > span {
+  >span {
     display: flex;
-    font-size: 12px;
+    font-size: 25px;
     font-family: ambrose-regular-light;
     color: #782f40;
   }
@@ -40,97 +88,36 @@
   margin: 30px 0px;
   width: 100%;
 }
+
 .arrow-message-image {
   width: 100%;
   margin: auto;
 }
 
-.arrow {
-  max-width: 600px;
-  height: auto;
-}
-.message {
-  display: flex;
-  position: absolute;
-  bottom: 2rem;
-  justify-content: center;
-}
-
-.outline-container {
-  display: flex;
-  position: relative;
-  width: 100%;
-}
-
-.collage {
-  width: 100%;
-}
-.barn-silhouette-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60%;
-  width: 70%;
-  left: 15%;
-}
-
-.book-btn-container {
-  display: flex;
-  width: max-content;
-  justify-content: center;
-  text-align: left;
-}
-
-.mat-wedding {
-  background-color: rgb(218, 218, 218) !important;
-  height: fit-content;
-  padding: 5px;
-  border-radius: 30px;
-  color: black;
-  font-weight: normal;
-  margin-top: 30px;
-  width: auto;
-  display: flex;
-  align-self: center;
-}
-
-.rooster {
-  width: 100px;
-}
-
-.save-date {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin: auto;
-}
-
-.footer-rooster {
-  width: 50px;
-  object-fit: scale-down;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: normal;
-}
-
-.top-text {
-  font-size: 1em;
-}
-.bot-text {
-  font-size: 1em;
-}
-
-@media (max-width: 400px) {
-  .message {
-    bottom: 0.5rem;
-  }
-}
-
 @media (min-width: 800px) {
+  .collage-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .collage {
+    margin: 0px 10px;
+  }
+
+  .c-text {
+    margin-bottom: 0px;
+  }
+
+  .c-img {
+    margin: 10px 0px;
+    // display: block;
+    // position: relative;
+    max-height: 300px;
+    // object-fit: contain;
+  }
+
   .trans-banner {
     bottom: 20px;
   }
@@ -138,34 +125,8 @@
   .trans-background {
     padding: 20px;
 
-    > span {
+    >span {
       font-size: 30px;
     }
-  }
-
-  .top-text {
-    font-size: 2em;
-  }
-  .bot-text {
-    font-size: 2.5em;
-  }
-  .footer-rooster {
-    width: 100px;
-    object-fit: scale-down;
-  }
-  .footer-text {
-    height: 100px;
-  }
-  .arrow-message-image {
-    width: 70%;
-  }
-  .landing-container {
-    margin-bottom: 40%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .landing-container {
-    margin-bottom: 30%;
   }
 }

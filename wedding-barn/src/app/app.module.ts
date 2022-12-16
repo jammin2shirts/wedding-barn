@@ -13,9 +13,7 @@ import { MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule} from '@angular/material/button';
 import { PricingPageComponent } from './component/pricing-page/pricing-page.component';
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
-import { ContactFormComponent } from './component/contact-form/contact-form.component';
-import { ContactPageComponent } from './component/contact-page/contact-page.component';
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy, NgOptimizedImage, provideImageKitLoader } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,6 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     LandingPageComponent,
     PricingPageComponent,
     UnderConstructionComponent,
-    ContactFormComponent,
-    ContactPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -35,9 +31,11 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     MatDividerModule,
     MatIconModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    NgOptimizedImage
   ],
-  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy},provideImageKitLoader("https://ik.imagekit.io/arungudelli/")
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

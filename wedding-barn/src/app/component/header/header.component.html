@@ -4,16 +4,14 @@
   </button>
   <mat-menu #menu="matMenu">
     <div class="nav left-nav" *ngFor="let nav of left_navs; let i = index">
-      <button mat-menu-item [routerLink]="['/', nav.link]">{{ nav.text | uppercase }}</button>
+      <button mat-menu-item (click)="navTo(nav.link)">{{ nav.text | uppercase }}</button>
     </div>
 
     <div class="nav right-nav" *ngFor="let nav of right_navs; let i = index">
-      <button mat-menu-item [routerLink]="['/', nav.link]">{{ nav.text | uppercase }}</button>
+      <button mat-menu-item (click)="navTo(nav.link)">{{ nav.text | uppercase }}</button>
     </div>
   </mat-menu>
 </div>
-
-
 
 <div class="header-container">
   <div class="header-col nav-col">
@@ -32,7 +30,7 @@
       </div>
     </div>
     <div class="arrow-div">
-      <img class="arrow flip-img" alt="left-arrow" src="/assets/images/arrow.svg" />
+      <img class="arrow flip-img" alt="left-arrow" src="/assets/images/arrow.svg" loading="eager"/>
     </div>
   </div>
 
@@ -45,7 +43,7 @@
       <div class="nav right-nav" *ngFor="let nav of right_navs; let i = index">
         <div class="nav-item">
           <h3>
-            <img class="hover-rooster" alt="rooster icon for nav" src="/assets/images/nav-rooster.png" />
+            <img class="hover-rooster" alt="rooster icon for nav" src="/assets/images/nav-rooster.png" loading="eager"/>
             <a (mouseover)="displayRooster(i + 1)" (mouseout)="hideRooster(i + 1)" [title]="nav.text"
             (click)="navTo(nav.link)">
               {{ nav.text | uppercase }}
@@ -55,7 +53,7 @@
       </div>
     </div>
     <div class="arrow-div">
-      <img class="arrow" alt="right-arrow" src="/assets/images/arrow.svg" />
+      <img class="arrow" alt="right-arrow" src="/assets/images/arrow.svg" loading="eager"/>
     </div>
   </div>
 </div>
