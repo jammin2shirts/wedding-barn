@@ -19,8 +19,8 @@
       <div class="nav left-nav" *ngFor="let nav of left_navs; let i = index">
         <div class="nav-item">
           <h3>
-            <img class="hover-rooster" alt="rooster icon for nav" src="/assets/images/nav-rooster.png" />
-            <a (mouseover)="displayRooster(i)" (mouseout)="hideRooster(i)" [title]="nav.text" (click)="navTo(nav.link)"
+            <img class="hover-rooster" alt="rooster icon for navigation" src="/assets/images/nav-rooster.png" />
+            <a  (mouseover)="displayRooster(i)" (mouseout)="hideRooster(i)" [title]="nav.text" (click)="navTo(nav.link)"
               
               >
               {{ nav.text | uppercase }}
@@ -35,7 +35,7 @@
   </div>
 
   <div class="header-col logo-container">
-    <img class="logo-img" alt="center logo" src="/assets/images/WB4.png" />
+    <img class="logo-img" alt="wedding barn header logo" src="/assets/images/WB4.png" />
   </div>
 
   <div class="header-col nav-col">

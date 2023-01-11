@@ -1,0 +1,48 @@
+.about-photo {
+    width: 100vw;
+}
+
+.container{
+    max-width: 800px;
+    margin: 40px max(20px, 10%);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.bio-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.bio-photo{
+    align-self: baseline;
+    height: 200px;
+    object-fit: contain;
+}
+
+.bio-title{
+    font-family: ambrose-regular-light;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+
+@media (min-width: 600px) {
+    .container{
+        margin: auto;
+        padding: 40px;
+    }
+    .bio-container{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .bio-photo{
+        align-self: center;
+        height: 200px;
+        object-fit: contain;
+    }
+}

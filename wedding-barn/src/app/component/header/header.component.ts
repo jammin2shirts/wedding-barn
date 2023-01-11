@@ -10,12 +10,13 @@ export class HeaderComponent implements OnInit {
   url ="https://www.honeybook.com/widget/the_wedding_barn_234791/cf_id/633da925dd2a5a0026b82a25"
 
   left_navs = [
-    { text: "About", link: "home" },
+    { text: "Home", link: "home" },
+    { text: "About", link: "about" },
     // { text: "FAQ", link: "" },
   ]
   right_navs = [
+    { text: "Packages", link: "packages" },
     { text: "Contact", link: "contact" },
-    // { text: "Pricing", link: "pricing" },
     // { text: "Calendar", link: "" },
     // { text: "Gallery", link: "" },
   ]

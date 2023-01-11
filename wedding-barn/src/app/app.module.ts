@@ -14,6 +14,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { PricingPageComponent } from './component/pricing-page/pricing-page.component';
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
 import { LocationStrategy, PathLocationStrategy, NgOptimizedImage, provideImageKitLoader } from '@angular/common';
+import { AboutComponent } from './component/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LocationStrategy, PathLocationStrategy, NgOptimizedImage, provideImageK
     LandingPageComponent,
     PricingPageComponent,
     UnderConstructionComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

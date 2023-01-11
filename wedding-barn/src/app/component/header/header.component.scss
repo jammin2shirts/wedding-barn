@@ -27,11 +27,14 @@ a:hover {
 .nav {
   display: flex;
   font-family: ambrose-regular-light;
-  font-size: small;
+  font-size: medium;
   font-weight: 100;
   padding: 0px 5px;
 }
 
+.nav-text{
+  font-family: ambrose-regular-light;
+}
 .nav-item {
   display: flex;
   flex-direction: column;
@@ -88,8 +91,6 @@ h3 {
   .logo-img {
     width: 200px;
   }
-}
-@media (min-width: 600px) {
 }
 
 @media (min-width: 900px) {

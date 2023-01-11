@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-html,
-body {
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
-}
+// @import url(https://use.typekit.net/lds4gch.css);
 
 
 @font-face {
@@ -23,7 +19,7 @@ body {
 
 body {
   margin: 0;
-  font-family: canada-type-gibson, sans-serif;
+  font-family: canada-type-gibson;
   font-weight: 200;
   font-style: normal;
   font-size: large;
