@@ -15,6 +15,7 @@ import { PricingPageComponent } from './component/pricing-page/pricing-page.comp
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
 import { LocationStrategy, PathLocationStrategy, NgOptimizedImage, provideImageKitLoader } from '@angular/common';
 import { AboutComponent } from './component/about/about.component';
+import { GalleryComponent } from './component/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './component/about/about.component';
     LandingPageComponent,
     PricingPageComponent,
     UnderConstructionComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

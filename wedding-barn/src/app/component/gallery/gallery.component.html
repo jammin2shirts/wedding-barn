@@ -1,0 +1,39 @@
+<section class="overflow-hidden text-neutral-700">
+    <div class="container mx-auto px-5 py-2 lg:px-32 lg:py-10">
+        <div class="-m-1 flex flex-wrap md:-m-2">
+            <div *ngFor="let i of numArray" class="flex w-1/2 flex-wrap">
+                <div *ngFor="let image of imgArray.slice(3*i,3*(i+1)); index as ind;" class="{{image.width}} p-1 md:p-2">
+                    <img (click)="imageClick(i, ind)" alt="gallery" class="block h-full w-full rounded-lg object-cover object-center" src={{image.src}}/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" (click)="close()">&times;</span>
+        <div class="flex content-center justify-center items-center" style="height:100vh" >
+            <svg
+                (click)="nextImage(-1)"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 m-10 text-white hover:text-[#bbb] hover:cursor-pointer ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+            </svg>
+            <img (click)="imageNav($event)"  class="modal-content" id="img01"/>
+            <svg
+                (click)="nextImage(1)"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 m-10 text-white hover:text-[#bbb] hover:cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+            </svg>
+        </div>
+        <div id="caption"></div>
+    </div>
+</section>

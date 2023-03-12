@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     { text: "Packages", link: "packages" },
     { text: "Contact", link: "contact" },
     // { text: "Calendar", link: "" },
-    // { text: "Gallery", link: "" },
+    { text: "Gallery", link: "gallery" },
   ]
 
   constructor(private router: Router) { }
