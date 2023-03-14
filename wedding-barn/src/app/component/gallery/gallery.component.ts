@@ -3,6 +3,7 @@ import { Component, OnInit } from "@angular/core";
 interface ImageData {
   src: string;
   width: string;
+  alt:string;
 }
 
 @Component({
@@ -22,31 +23,37 @@ export class GalleryComponent implements OnInit {
       src:
         "/assets/images/webp/ceremony.webp",
       width: "w-1/2",
+      alt:"Ceremony Seating under oak tree"
     },
     {
       src:
         "/assets/images/webp/patio.webp",
       width: "w-1/2",
+      alt:"String lit patio with wedding barn background"
     },
     {
       src:
         "/assets/images/webp/barn-door-view.webp",
       width: "w-full",
+      alt:"Barn door view of wedding barn"
     },
     {
       src:
         "/assets/images/webp/zoomed-in-rafter.webp",
       width: "w-full",
+      alt:"Close up view of rafters and chandeliers"
     },
     {
       src:
         "/assets/images/webp/interior.webp",
       width: "w-1/2",
+      alt:"Interior view of wedding barn with setup for reception"
     },
     {
       src:
         "/assets/images/webp/family.webp",
       width: "w-1/2",
+      alt:"Breaking ground photo of wedding barn family"
     },
   ];
 
@@ -87,7 +94,7 @@ export class GalleryComponent implements OnInit {
     modal.style.display = "flex";
     modal.style.flexDirection="column";
     modalImg.src = this.imgArray[index].src;
-    captionText.innerHTML = "image data alt text";
+    captionText.innerHTML = this.imgArray[index].alt;
   }
 
   nextImage(positionChange: number) {
