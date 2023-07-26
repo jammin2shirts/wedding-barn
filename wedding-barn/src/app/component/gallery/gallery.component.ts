@@ -21,7 +21,7 @@ export class GalleryComponent implements OnInit {
 
     {
       src:
-        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webp",
       width: "w-full",
       alt:"3D Render of Barn"
     }
