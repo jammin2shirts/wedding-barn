@@ -27,31 +27,31 @@ export class GalleryComponent implements OnInit {
     }
     {
       src:
-        "/assets/images/webp/patio.webp",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
       width: "w-1/2",
       alt:"String lit patio with wedding barn background"
     },
     {
       src:
-        "/assets/images/webp/barn-door-view.webp",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
       width: "w-full",
       alt:"Barn door view of wedding barn"
     },
     {
       src:
-        "/assets/images/webp/zoomed-in-rafter.webp",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
       width: "w-full",
       alt:"Close up view of rafters and chandeliers"
     },
     {
       src:
-        "/assets/images/webp/interior.webp",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
       width: "w-1/2",
       alt:"Interior view of wedding barn with setup for reception"
     },
     {
       src:
-        "/assets/images/webp/family.webp",
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
       width: "w-1/2",
       alt:"Breaking ground photo of wedding barn family"
     },
