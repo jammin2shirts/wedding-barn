@@ -21,10 +21,9 @@ export class GalleryComponent implements OnInit {
 
     {
       src:
-        "/assets/images/webp/ceremony.webp",
-      width: "w-1/2",
-      alt:"Ceremony Seating under oak tree"
-    },
+        "/assets/images/webp/Website Gallery WebP/3D Render Barn.webP",
+      width: "w-full",
+      alt:"3D Render of Barn"
     {
       src:
         "/assets/images/webp/patio.webp",
