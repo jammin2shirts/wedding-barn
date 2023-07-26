@@ -25,12 +25,12 @@ export class GalleryComponent implements OnInit {
       width: "w-1/2",
       alt:"Ceremony Seating under oak tree"
     },
-    // {
-    //   src:
-    //     "/assets/images/webp/patio.webp",
-    //   width: "w-1/2",
-    //   alt:"String lit patio with wedding barn background"
-    // },
+    {
+      src:
+        "/assets/images/webp/patio.webp",
+      width: "w-1/2",
+      alt:"String lit patio with wedding barn background"
+    },
     {
       src:
         "/assets/images/webp/barn-door-view.webp",
